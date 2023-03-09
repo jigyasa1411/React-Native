@@ -13,7 +13,7 @@ export default function LoginPage({ navigation}) {
       return (
        // <View style={styles.container}>
         //  <NavigationContainer>
-            <ImageBackground style={styles.container} source={require("../assets/bgImage4.jpeg")} resizeMode='cover'>
+            <ImageBackground style={styles.container} source={require("../assets/bg2.jpeg")} resizeMode='cover'>
     
     <Text style={styles.textDecoration}>ToDo App</Text>
     <View style={{flexDirection: 'column',height: 250}}></View>
@@ -41,12 +41,12 @@ export default function LoginPage({ navigation}) {
     onPress={print("Test")}
     /> */}
     
-    <View style={styles.button}>
-      <Text style={styles.btnTextDecoration}>Login</Text>
+    <View style={styles.button} >
+      <Text onPress={()=> navigation.navigate("ToDoListPage")} style={styles.btnTextDecoration}>Login</Text>
     </View>
     
     <View style={{flexDirection: 'column',height: 20}}></View>
-    <Text style={styles.btnTextDecoration}>Visiting first time? <Text onPress={()=> navigation.navigate("SignUpPage")} style = {{ color: '#CC6600',
+    <Text style={styles.visitingFirstTimeTextDecoration}>Visiting first time? <Text onPress={()=> navigation.navigate("SignUpPage")} style = {{ color: '#CC6600',
     fontSize: 20,
     fontWeight: 'bold',
     fontFamily: 'Cochin'}}>Sign Up</Text></Text>
@@ -85,8 +85,8 @@ const styles =  StyleSheet.create({
       justifyContent: 'center',
       alignItems: 'center',
       padding: 10,
-     backgroundColor: '#663300',
-     color: '#663300',
+     backgroundColor: '#004C99',
+     color: '#004C99',
      borderRadius: 10,
      
       
@@ -103,7 +103,7 @@ const styles =  StyleSheet.create({
       borderRadius: 10
     },
     textDecoration: {
-      color: '#fff',
+      color: '#004C99',
       fontSize: 40,
       fontWeight: 'bold',
       fontFamily: 'Cochin',
@@ -111,6 +111,14 @@ const styles =  StyleSheet.create({
     },
     btnTextDecoration: {
       color: '#fff',
+      fontSize: 20,
+      alignItems: 'center',
+      fontWeight: 'bold',
+      fontFamily: 'Cochin',
+      justifyContent: 'center'
+    },
+    visitingFirstTimeTextDecoration: {
+      color: '#004C99',
       fontSize: 20,
       alignItems: 'center',
       fontWeight: 'bold',

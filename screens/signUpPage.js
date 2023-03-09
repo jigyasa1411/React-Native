@@ -15,7 +15,7 @@ export default function SignupPage({ navigation}) {
       return (
        // <View style={styles.container}>
         //  <NavigationContainer>
-            <ImageBackground style={styles.container} source={require("../assets/bgImage4.jpeg")} resizeMode='cover'>
+            <ImageBackground style={styles.container} source={require("../assets/bg2.jpeg")} resizeMode='cover'>
     
     <Text style={styles.textDecoration}>ToDo App</Text>
     <View style={{flexDirection: 'column',height: 250}}></View>
@@ -60,7 +60,7 @@ export default function SignupPage({ navigation}) {
     </View>
     
     <View style={{flexDirection: 'column',height: 20}}></View>
-    <Text onPress={() => navigation.navigate("LoginPage")} style={ styles.btnTextDecoration}>Already Registered? <Text style = {{ color: '#CC6600',
+    <Text onPress={() => navigation.navigate("LoginPage")} style={ styles.visitingFirstTimeTextDecoration}>Already Registered? <Text style = {{ color: '#CC6600',
     fontSize: 20,
     fontWeight: 'bold',
     fontFamily: 'Cochin'}}>Sign In</Text></Text>
@@ -75,62 +75,69 @@ export default function SignupPage({ navigation}) {
 }
 
 const styles =  StyleSheet.create({
-    container: {
-      flex : 2,
-      //backgroundColor: "#fff",
-      alignItems: 'center',
-      justifyContent: 'center',
-     paddingHorizontal: 5,
-     opacity: 1
+  container: {
+    flex : 2,
+    //backgroundColor: "#fff",
+    alignItems: 'center',
+    justifyContent: 'center',
+   paddingHorizontal: 5,
+   opacity: 1
+  
     
-      
-    },
-    image: {
-      flex: 1,
-      justifyContent: 'center',
-      opacity: 0.8
-      
-    },
-    button: {
-      height: 50,
-      width: 350,
-      margin: 2,
-      borderWidth: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: 10,
-     backgroundColor: '#663300',
-     color: '#663300',
-     borderRadius: 10,
-     
-      
-    },
-    textInput: {
-      
-      height: 50,
-      width: 350,
-      margin: 2,
-      borderWidth: 1,
-      justifyContent: 'space-between',
-      padding: 10,
-      backgroundColor: '#fff',
-      borderRadius: 10
-    },
-    textDecoration: {
-      color: '#fff',
-      fontSize: 40,
-      fontWeight: 'bold',
-      fontFamily: 'Cochin',
-      marginTop: 10
-    },
-    btnTextDecoration: {
-      color: '#fff',
-      fontSize: 20,
-      alignItems: 'center',
-      fontWeight: 'bold',
-      fontFamily: 'Cochin',
-      justifyContent: 'center'
-    }
-  });
-  
-  
+  },
+  image: {
+    flex: 1,
+    justifyContent: 'center',
+    opacity: 0.8
+    
+  },
+  button: {
+    height: 50,
+    width: 350,
+    margin: 2,
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 10,
+   backgroundColor: '#004C99',
+   color: '#004C99',
+   borderRadius: 10,
+   
+    
+  },
+  textInput: {
+    
+    height: 50,
+    width: 350,
+    margin: 2,
+    borderWidth: 1,
+    justifyContent: 'space-between',
+    padding: 10,
+    backgroundColor: '#fff',
+    borderRadius: 10
+  },
+  textDecoration: {
+    color: '#004C99',
+    fontSize: 40,
+    fontWeight: 'bold',
+    fontFamily: 'Cochin',
+    marginTop: 10
+  },
+  btnTextDecoration: {
+    color: '#fff',
+    fontSize: 20,
+    alignItems: 'center',
+    fontWeight: 'bold',
+    fontFamily: 'Cochin',
+    justifyContent: 'center'
+  },
+  visitingFirstTimeTextDecoration: {
+    color: '#004C99',
+    fontSize: 20,
+    alignItems: 'center',
+    fontWeight: 'bold',
+    fontFamily: 'Cochin',
+    justifyContent: 'center'
+  }
+});
+

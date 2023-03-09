@@ -11,7 +11,7 @@ export default function OnboardingPage({navigation}){
     
     pages={[
     {
-    backgroundColor: '#FFCC99',
+    backgroundColor: '#CCFFFF',
     
    image: <Image source={require("/Users/jigyasa/Desktop/React Native/ToDoApp/assets/onboardingBg.png")} />,
     title: 'Welcome',
@@ -19,7 +19,7 @@ export default function OnboardingPage({navigation}){
     
     },
     {
-        backgroundColor: '#FFCC99',
+        backgroundColor: '#CCFFFF',
        image: <Image 
        
        
@@ -28,7 +28,7 @@ export default function OnboardingPage({navigation}){
         subtitle: 'This is the second slide of the Onboarding Swiper.',
         },
         {
-            backgroundColor: '#FFCC99',
+            backgroundColor: '#CCFFFF',
            image: <Image source={require("/Users/jigyasa/Desktop/React Native/ToDoApp/assets/onboardingBg.png")} />,
             title: 'All Done',
             subtitle: 'This is the Third slide of the Onboarding Swiper.',
